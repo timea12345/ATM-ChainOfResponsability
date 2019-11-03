@@ -38,7 +38,7 @@ public class Main {  // todo verify infinite loop in main !!!!
         }
     }
 
-    private static void delegate(int desiredMoney) {
+    private static void delegate(int desiredMoney) {  // todo make a default constructor --- for NullPointerException
         if (desiredMoney >= 500) {
             Bancnote bancnote = new $500Ron(new $200Ron(new $100Ron(new $50Ron(new $10Ron(new $5Ron(null))))));
             bancnote.giveMoney(desiredMoney);
